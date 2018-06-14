@@ -17,16 +17,16 @@ namespace Fitness.Services
             items = new List<Item>();
             var mockItems = new List<Item>
             {
-                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Seated Leg Press", Description="Stoel 8", Gewicht=45, Herhaling=20, Series=2 },
+                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Seated Leg Press", Description="Stoel 8", Gewicht=45.543, Herhaling=20, Series=2 },
                 new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Leg Extension", Description="Stoel 6, Voetrol L, BWB: Max, Links en rechts apart", Gewicht=7, Herhaling=20, Series=2 },
-                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Chest press", Description="Stoel hoog", Gewicht=14, Herhaling=20, Series=2 },
-                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Pectoral Fly", Description="Stoel 5, armen 4", Gewicht=14, Herhaling=20, Series=2 },
+                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Chest press", Description="Stoel hoog", Gewicht=14.543, Herhaling=20, Series=2 },
+                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Pectoral Fly", Description="Stoel 5, armen 4", Gewicht=14.42, Herhaling=20, Series=2 },
                 new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Lat Pulldown", Description="", Gewicht=14, Herhaling=20, Series=2 },
                 new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Seated Row", Description="Stoel 5, Borststeun 5", Gewicht=14, Herhaling=20, Series=2 },
                 new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Side raise", Description="Katrol op 50 cm, links en rechts apart", Gewicht=1.25, Herhaling=20, Series=2 },
-                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Low Back Extension", Description="Voetsteun 5, Rugsteun XL", Gewicht=1.25, Herhaling=20, Series=2 },
+                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Low Back Extension", Description="Voetsteun 5, Rugsteun XL", Gewicht=35, Herhaling=20, Series=2 },
                 new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Weighted situp", Description="Situps met bal", Gewicht=3, Herhaling=10, Series=2 },
-                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Oblique, twist", Description="Voeten los, bal links en rechts grond raken", Gewicht=3, Herhaling=10, Series=2 },
+                new Item { Id = Guid.NewGuid().ToString(), ToestelNaam = "Oblique, twist", Description="Voeten los, bal links en rechts grond raken", Gewicht=3, Herhaling=12, Series=2 },
 
             };
 

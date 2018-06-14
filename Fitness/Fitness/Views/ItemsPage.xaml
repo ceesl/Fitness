@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:Fitness.Convertors"
              x:Class="Fitness.Views.ItemsPage"
               Title="{Binding Title}"
              x:Name="BrowseItemsPage">
@@ -11,8 +12,14 @@
                     <On Platform="UWP" Value="add.png"/>
                 </OnPlatform>
             </ToolbarItem.Icon>
-        </ToolbarItem>
+        </ToolbarItem> 
     </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:SingleDecimal
+                 x:Key="singleDecimal" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <ListView x:Name="ItemsListView" 
@@ -34,7 +41,7 @@
                                 FontSize="16" />
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text="Gewicht: "/>
-                                    <Label Text="{Binding Gewicht}" />
+                                    <Label Text="{Binding Gewicht, Converter={StaticResource singleDecimal}}" />
                                     <Label Text="Herhaling: "/>
                                     <Label Text="{Binding Herhaling}" />
                                     <Label Text="Series: "/>
